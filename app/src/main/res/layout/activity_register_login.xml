@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".RegisterLogin">
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/headerbg">
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/headeaton"
+        android:layout_below="@+id/Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/idoffork"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/textvieweaton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:fontFamily="@font/bungee"
+            android:text="EATONE"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/loginregisterbtns"
+        android:layout_below="@+id/headeaton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="LOG IN "
+            android:textColor="@color/white"
+            android:background="@drawable/btnshape"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/loginbtn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btnshape"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

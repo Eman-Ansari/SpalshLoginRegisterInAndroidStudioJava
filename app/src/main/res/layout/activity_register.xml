@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Register">
+    <TextView
+        android:id="@+id/textviewregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+
+    <EditText
+        android:id="@+id/edittextforusername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textviewregister"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/amarante"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edittextforemail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edittextforusername"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/amarante"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edittextforpassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edittextforemail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/amarante"
+        android:hint="Password"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@drawable/btnshape"
+        android:textColor="@color/white"
+        android:text="REGISTER"
+        android:layout_below="@+id/edittextforpassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        />
+    <TextView
+        android:id="@+id/textviewforalreadyregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerbtn"
+        android:layout_toLeftOf="@+id/tvlogin"
+        android:textSize="15sp"
+        android:text="Already Register? "/>
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#F42424"
+        android:backgroundTint="@color/grey"
+        android:layout_below="@+id/registerbtn"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
